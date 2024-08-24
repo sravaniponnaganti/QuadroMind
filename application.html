@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadro Minds</title>
+    <style>
+        /* Existing CSS unchanged */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #232f3e, #3c4d6d);
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffa500;
+        }
+        .search-container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            margin: 0 20px;
+        }
+        .search-container input[type="text"] {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px 40px 10px 15px;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .search-container::before {
+            content: "\1F50D";
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: #555;
+        }
+        .mostly-used {
+            text-align: center;
+            font-size: 28px;
+            margin: 20px 0;
+            color: #444;
+            font-weight: bold;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+        .card h2 {
+            margin: 15px 0;
+            color: #333;
+            font-size: 20px;
+        }
+        .card p {
+            padding: 0 15px 15px;
+            color: #555;
+            font-size: 14px;
+        }
+        footer {
+            background-color: #232f3e;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .footer-content {
+            flex-grow: 1;
+            text-align: center;
+            margin: 10px 0;
+        }
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+        .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .social-icons a:hover {
+            color: #ffa500;
+        }
+        @media (max-width: 768px) {
+            .search-container {
+                margin: 10px 0;
+            }
+            .social-icons {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div>
+            <a href="samsung.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFag6Qmtl8unMlATQrk4ApQ-Ml7S6jEN5EuQ&s" alt="Quadro Minds Logo">
+            </a>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search with ease...">
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Mostly Used Section -->
+    <div class="mostly-used">Mostly Used</div>
+
+    <!-- Card Section -->
+    <div class="card-container">
+        <!-- Samsung Card -->
+        <a href="samsung.html" class="card">
+            <img src="https://1000logos.net/wp-content/uploads/2017/06/Samsung-logo.jpg" alt="Samsung Phone">
+            <h2>Samsung</h2>
+            <p>Experience the best of innovation with Samsung's latest smartphones.</p>
+        </a>
+        
+        <!-- Oppo Card -->
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHTPb_Kcg9-ajDpYJpF1t8XncH3uV2G_E51w&s" alt="Oppo Phone">
+            <h2>Oppo</h2>
+            <p>Capture every moment with Oppo's advanced camera technology.</p>
+        </div>
+        
+        <!-- Vivo Card -->
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIHTog-ba9n0OgDoMDG9PXRns8-3qG6FvpAQ&s" alt="Vivo Phone">
+            <h2>Vivo</h2>
+            <p>Enjoy seamless performance with Vivo's feature-packed smartphones.</p>
+        </div>
+        
+        <!-- iPhone Card -->
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnW6Ipl8xSUfhqVvZEEb_nDwv8Pp2A5Gpwbg&s" alt="iPhone">
+            <h2>iPhone</h2>
+            <p>Discover the future of smartphones with Apple's iconic iPhone.</p>
+        </div>
+    </div>
+
+    <!-- Laptop Cards Section -->
+    <div class="card-container">
+        <!-- HP Laptop Card -->
+        <div class="card">
+            <img src="https://logos-world.net/wp-content/uploads/2020/11/Hewlett-Packard-Logo-2008-2014.png" alt="HP Laptop">
+            <h2>HP</h2>
+            <p>Experience innovation and performance with HP laptops.</p>
+        </div>
+        
+        <!-- Dell Laptop Card -->
+        <div class="card">
+            <img src="https://www.shutterstock.com/image-photo/wuhanchinajan19th-2023-close-dell-store-600nw-2313072843.jpg" alt="Dell Laptop">
+            <h2>Dell</h2>
+            <p>Power through your tasks with Dell's reliable laptops.</p>
+        </div>
+
+        <!-- Lenovo Laptop Card -->
+        <div class="card">
+            <img src="https://static.vecteezy.com/system/resources/previews/020/927/282/original/lenovo-logo-brand-phone-symbol-name-black-design-china-mobile-illustration-free-vector.jpg" alt="Lenovo Laptop">
+            <h2>Lenovo</h2>
+            <p>Get the best of work and play with Lenovo's versatile laptops.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            &copy; 2024 Quadro Minds. All rights reserved.
+        </div>
+        <div class="social-icons">
+            <a href="#">&#xf09a;</a> <!-- Example for Facebook Icon -->
+            <a href="#">&#xf099;</a> <!-- Example for Twitter Icon -->
+            <a href="#">&#xf16d;</a> <!-- Example for Instagram Icon -->
+        </div>
+    </footer>
+</body>
+</html>
